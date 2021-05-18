@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="standardized energy <= 0.000383\ngini = 0.301833\nsamples = 616500\nvalue = [114191, 502309]\nclass = speech"] ;
+1 [label="standardized energy <= 0.000294\ngini = 0.40882\nsamples = 138033\nvalue = [98489, 39544]\nclass = silence"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+5 [label="gini = 0.393209\nsamples = 131040\nvalue = [95800, 35240]\nclass = silence"] ;
+1 -> 5 ;
+6 [label="gini = 0.473332\nsamples = 6993\nvalue = [2689, 4304]\nclass = speech"] ;
+1 -> 6 ;
+2 [label="standardized energy <= 0.001626\ngini = 0.063481\nsamples = 478467\nvalue = [15702, 462765]\nclass = speech"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.345877\nsamples = 47419\nvalue = [10546, 36873]\nclass = speech"] ;
+2 -> 3 ;
+4 [label="gini = 0.023637\nsamples = 431048\nvalue = [5156, 425892]\nclass = speech"] ;
+2 -> 4 ;
+}

@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="standardized energy <= 0.000721\nentropy = 0.69165\nsamples = 880715\nvalue = [163244, 717471]\nclass = speech"] ;
+1 [label="standardized energy <= 0.00041\nentropy = 0.92087\nsamples = 224738\nvalue = [149242, 75496]\nclass = silence"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+5 [label="entropy = 0.869908\nsamples = 200312\nvalue = [142037, 58275]\nclass = silence"] ;
+1 -> 5 ;
+6 [label="entropy = 0.875058\nsamples = 24426\nvalue = [7205, 17221]\nclass = speech"] ;
+1 -> 6 ;
+2 [label="standardized energy <= 0.005312\nentropy = 0.148929\nsamples = 655977\nvalue = [14002, 641975]\nclass = speech"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="zero crossing rate <= 0.012057\nentropy = 0.476767\nsamples = 113295\nvalue = [11609, 101686]\nclass = speech"] ;
+2 -> 3 ;
+7 [label="entropy = 0.993206\nsamples = 5249\nvalue = [2879, 2370]\nclass = silence"] ;
+3 -> 7 ;
+8 [label="entropy = 0.404988\nsamples = 108046\nvalue = [8730, 99316]\nclass = speech"] ;
+3 -> 8 ;
+4 [label="entropy = 0.040853\nsamples = 542682\nvalue = [2393, 540289]\nclass = speech"] ;
+2 -> 4 ;
+}

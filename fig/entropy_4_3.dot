@@ -1,0 +1,13 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="standardized energy <= 0.000719\nentropy = 0.691308\nsamples = 616500\nvalue = [114172, 502328]\nclass = speech"] ;
+1 [label="entropy = 0.921353\nsamples = 157160\nvalue = [104288, 52872]\nclass = silence"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="standardized energy <= 0.005358\nentropy = 0.14988\nsamples = 459340\nvalue = [9884, 449456]\nclass = speech"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="entropy = 0.478692\nsamples = 80062\nvalue = [8253, 71809]\nclass = speech"] ;
+2 -> 3 ;
+4 [label="entropy = 0.039997\nsamples = 379278\nvalue = [1631, 377647]\nclass = speech"] ;
+2 -> 4 ;
+}

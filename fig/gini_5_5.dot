@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="standardized energy <= 0.000383\ngini = 0.302039\nsamples = 616500\nvalue = [114292, 502208]\nclass = speech"] ;
+1 [label="zero crossing rate <= 0.325532\ngini = 0.407099\nsamples = 138282\nvalue = [98944, 39338]\nclass = silence"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+5 [label="gini = 0.393742\nsamples = 133008\nvalue = [97162, 35846]\nclass = silence"] ;
+1 -> 5 ;
+6 [label="gini = 0.447437\nsamples = 5274\nvalue = [1782, 3492]\nclass = speech"] ;
+1 -> 6 ;
+2 [label="standardized energy <= 0.001617\ngini = 0.062128\nsamples = 478218\nvalue = [15348, 462870]\nclass = speech"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.34528\nsamples = 46700\nvalue = [10361, 36339]\nclass = speech"] ;
+2 -> 3 ;
+4 [label="zero crossing rate <= 0.007801\ngini = 0.022847\nsamples = 431518\nvalue = [4987, 426531]\nclass = speech"] ;
+2 -> 4 ;
+7 [label="gini = 0.495437\nsamples = 2910\nvalue = [1316, 1594]\nclass = speech"] ;
+4 -> 7 ;
+8 [label="gini = 0.016983\nsamples = 428608\nvalue = [3671, 424937]\nclass = speech"] ;
+4 -> 8 ;
+}
