@@ -6,4 +6,4 @@
 #SBATCH --cpus-per-task=4
 module add cuda/10.1
 conda activate ywg
-python main.py --stage 1 --lr 0.0005
+python main.py --stage 0 --lr 0.0005
