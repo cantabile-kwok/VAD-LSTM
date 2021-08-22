@@ -1,6 +1,6 @@
 # VAD Project Task2: VAD Based on BiLSTM and MFCC
 
-*519030910352 郭奕玮*
+*cantabile-kwok*
 
 ### Code Environment & Required Packages
 
@@ -84,11 +84,9 @@ vad (*root*)
 
 ├──**main.py** (主函数)
 
-├──**519030910352-郭奕玮.pdf **(Report)
-
 ├──epoch_0.pth, epoch_1.pth等（保存模型）
 
-├──script (若在苏州超算上跑，可sbatch提交之)
+├──script (可sbatch提交之)
 
 └──README.md，README.html
 
